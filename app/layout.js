@@ -1,4 +1,4 @@
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import { Children } from "react";
 import "./globals.css";
 
