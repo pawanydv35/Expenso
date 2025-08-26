@@ -1,3 +1,5 @@
+// import Navbar from "@/components/Navbar";
+import { Children } from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -5,11 +7,12 @@ export const metadata = {
   description: "Expenso is a simple and powerful expense tracker web app that helps you manage your daily spending, set budgets, and track savings effortlessly. Stay in control of your finances with clear insights and reports.",
 };
 
-export default function RootLayout() {
+export default function RootLayout({Children}) {
   return (
     <html lang="en">
       <body>
-
+        <Navbar />  
+        {Children}
       </body>
     </html>
   );
