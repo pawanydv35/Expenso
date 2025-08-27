@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import Dashboard from "@/components/Dashboard";
 import { Children } from "react";
 import "./globals.css";
 
@@ -14,6 +15,7 @@ export default function RootLayout({Children}) {
       <body>
         <Navbar />  
           <Sidebar />
+          <Dashboard/>
         {Children}
       </body>
     </html>
