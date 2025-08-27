@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 import { Children } from "react";
 import "./globals.css";
 
@@ -12,6 +13,7 @@ export default function RootLayout({Children}) {
     <html lang="en">
       <body>
         <Navbar />  
+          <Sidebar />
         {Children}
       </body>
     </html>
