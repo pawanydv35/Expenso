@@ -1,6 +1,7 @@
 // app/page.js
 export default function Dashboard() {
   return (
+    
     <div className="p-10">
       {/* Welcome Section */}
       <div className="text-center mb-10">
@@ -64,6 +65,9 @@ export default function Dashboard() {
         </div>
       </div>
     </div>
+
+ 
+
   );
 }
 
