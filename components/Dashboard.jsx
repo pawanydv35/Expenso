@@ -2,7 +2,7 @@
 export default function Dashboard() {
   return (
      
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex h-screen  bg-gray-100 overflow-hidden">
   {/* Sidebar */}
   <aside className="w-64 bg-white border-r p-6">
     <nav className="space-y-4">
@@ -34,14 +34,14 @@ export default function Dashboard() {
   </aside>
 
   {/* Main Content */}
-  <main className="flex-1 p-10">
+  <main className=" flex-1 p-10">
     {/* Welcome Section */}
-    <div className="text-center mb-5">
+    {/* <div className="text-center mb-5">
       <h1 className="text-3xl font-bold">Welcome to Expenso 🎉</h1>
       <p className="text-gray-600 mt-2">
         Let&apos;s get started by adding your first transaction or setting a budget.
       </p>
-    </div>
+    </div> */}
 
     {/* Grid Section */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
