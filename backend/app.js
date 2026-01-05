@@ -1,6 +1,23 @@
-const express = require("express");
+const express = require('express');
+const colors = require('colors');
+const dotenv = require('dotenv');
+const morgan = require('morgan');
+const cors = require('cors');
+
+//config
+dotenv.config();
+
+
+// rest objects
 const  app = express();
 
+//middlewares
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(cors());
+
+
+// routes
 app.get("/", (req,res)=>{
     res.send("hello express");
 });
@@ -25,6 +42,11 @@ app.get("/contact", (req,res)=>{
     res.send("contact us");
 });
 
-app.listen(8000, ()=>{
-    console.log("server is running");
+
+//port
+const PORT = 8080 || process.env.PORT
+
+//listen
+app.listen(PORT, () => {
+   console.log(`server is running at ${PORT}`);
 });
